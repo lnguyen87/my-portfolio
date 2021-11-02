@@ -32,6 +32,12 @@ header {
 header img {
     max-height: 150px;
     max-width: 150px;
+    margin-top: -30px;
+}
+
+header h1 {
+    display: flex;
+    align-items: flex-start;
 }
 
 header h1 a {
@@ -54,7 +60,7 @@ header nav ul{
 
 header nav ul li a {
     color: var(--secondary-color);
-    padding: 10px 50px;
+    padding: 20px 50px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
