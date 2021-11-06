@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #000000;
-  --secondary-color: #f8d7ac;
-  --tertiary-color: #dd7233;
-  --quaternary-color: #21573d;
-  --quinary-color: #ffff00;
+  --primary-color: #ffffff;
+  --secondary-color: #bdaf9e;
+  --tertiary-color: #000000;
+  --quaternary-color: #492a36;
+  --quinary-color: #61c2c2;
 }
 
 * {
@@ -15,16 +15,18 @@
 }
 
 body {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+.background-border {
   background: var(--quaternary-color);
+
+  margin:70px;
 }
 
 /* HEADER / NAVBAR STYLES START */
 header {
-  background: url(../images/green-header.jpg);
-  background-size: auto;
-  background-attachment: fixed;
-  background-position: 30%;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -64,58 +66,14 @@ header nav ul {
 header nav ul li a {
   color: var(--primary-color);
   padding: 20px 50px;
-  font-size: 1.55vw;
+  font-size: 1.3vw;
 }
 
 header nav ul li a:hover {
-  color: var(--tertiary-color);
-  text-shadow: -2px 2px var(--primary-color);
+  color: var(--quinary-color);
+  text-shadow: -2px 2px #000000;
 }
 /* HEADER STYLE ENDS */
-
-/* FOOTER STYLE STARTS */
-footer {
-  background: var(--primary-color);
-  width: 100%;
-  padding: 40px 65px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer h2 {
-  align-items: center;
-  color: var(--tertiary-color);
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  text-align: right;
-}
-
-footer div p {
-  color: var(--secondary-color);
-  padding: 20px 80px;
-  font-size: 20;
-}
-
-footer div p a {
-  color: var(--secondary-color);
-}
-footer div p a:hover {
-  color: var(--tertiary-color);
-}
-
-footer div p a:visited {
-  color: var(--quinary-color);
-}
-/* FOOTER STYLE ENDS */
 
 /* SECTION STYLE STARTS */
 section {
@@ -125,23 +83,23 @@ section {
 .section-title {
   color: var(--tertiary-color);
   font-size: 30px;
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
   padding-bottom: 30px;
   text-align: center;
   margin: 0 auto 35px auto;
   width: 35%;
 }
 
-/* SECTION STYLE ENDS */
-
-/* ABOUT ME STYLE STARTS */
-.bio-info {
+.section-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
 
+/* SECTION STYLE ENDS */
+
+/* ABOUT ME STYLE STARTS */
 .bio-img {
   width: 35%;
 }
@@ -154,7 +112,6 @@ section {
 .bio-text {
   padding: 20px;
   width: 40%;
-  color: var(--secondary-color);
 }
 
 .bio-text h3 {
@@ -162,8 +119,11 @@ section {
   margin: 0;
 }
 .bio-text p {
-  color: var(--secondary-color);
   font-size: 18px;
+}
+
+.bio-text p span {
+  color: var(--quinary-color);
 }
 
 .bio-text img{
@@ -187,16 +147,67 @@ section {
   flex: 1;
 }
 
-
-
 .project img {
   width: auto;
   height: 300px;
-  opacity: 70%;
+  opacity: 60%;
 }
 
 .project img:hover {
   width: auto;
   height: 350px;
   opacity: 100%;
+}
+
+/* CONTACT-ME STYLE STARTS */
+.contact h2 {
+  align-items: center;
+  background: var(--secondary-color);
+  color: var(--quaternary-color);
+  font-size: 30px;
+  margin: 0;
+}
+
+.contact div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-align: right;
+}
+
+.contact div p {
+  color: var(--primary-color);
+  padding: 20px 80px;
+  font-size: 20px;
+}
+
+.contact div p a {
+  color: var(--secondary-color);
+}
+.contact div p a:hover {
+  color: var(--quinary-color);
+}
+
+.contact div p a:visited {
+  color: var(--quinary-color);
+}
+/* CONTACT-ME STYLE ENDS */
+
+
+/* UTILITIES */
+.blue-text {
+  color: var(--quinary-color);
+  font-style: italic;
+}
+
+.inverted-color {
+  display: table;
+
+ padding: 5px;
+ margin: 10px;
+ font-size: 30px;
+ background: var(--secondary-color);
+color: var(--quaternary-color);
 }
