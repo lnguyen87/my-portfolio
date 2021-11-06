@@ -285,6 +285,11 @@ section {
   .projects {
     flex: 0 70%;
   }
+
+  .project img {
+    width: 250px;
+    height: auto;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -312,6 +317,10 @@ section {
     width: 250px;
     height: auto;
   }
+
+  .project img {
+    width: 200px;
+    height: auto;
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
