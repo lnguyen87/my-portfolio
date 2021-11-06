@@ -3,6 +3,7 @@
   --secondary-color: #f8d7ac;
   --tertiary-color: #dd7233;
   --quaternary-color: #21573d;
+  --quinary-color: #ffff00;
 }
 
 * {
@@ -10,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
 }
 
 body {
@@ -111,13 +113,13 @@ footer div p a:hover {
 }
 
 footer div p a:visited {
-  color: #ffff00;
+  color: var(--quinary-color);
 }
 /* FOOTER STYLE ENDS */
 
 /* SECTION STYLE STARTS */
 section {
-  padding: 50px;
+  padding: 20px 40px 50px 40px;
 }
 
 .section-title {
@@ -133,7 +135,7 @@ section {
 /* SECTION STYLE ENDS */
 
 /* ABOUT ME STYLE STARTS */
-.about-me {
+.bio-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -142,7 +144,6 @@ section {
 
 .bio-img {
   width: 35%;
-  margin: 3.5%;
 }
 
 .bio-img img {
@@ -163,6 +164,11 @@ section {
 .bio-text p {
   color: var(--secondary-color);
   font-size: 18px;
+}
+
+.bio-text img{
+    width: 150px;
+    height: auto;
 }
 
 /* ABOUT ME STYLE ENDS */
