@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   line-height: 2em;
 }
 
@@ -22,7 +23,7 @@ body {
 .background-border {
   background: var(--quaternary-color);
 
-  margin:70px;
+  margin: 70px;
 }
 
 /* HEADER / NAVBAR STYLES START */
@@ -48,7 +49,19 @@ header h1 {
 header h1 a {
   text-decoration: none;
   color: var(--tertiary-color);
+  display: table;
+  padding: 0px;
+  margin: 0px;
   font-size: 2vw;
+}
+
+header h1 a:hover {
+  display: table;
+  padding: 0px;
+  margin: 0px;
+  font-size: 2vw;
+  background: var(--quinary-color);
+  color: var(--quaternary-color);
 }
 
 header nav {
@@ -126,9 +139,9 @@ section {
   color: var(--quinary-color);
 }
 
-.bio-text img{
-    width: 150px;
-    height: auto;
+.bio-text img {
+  width: 150px;
+  height: auto;
 }
 
 /* ABOUT ME STYLE ENDS */
@@ -136,27 +149,32 @@ section {
 /* WORK STYLE STARTS */
 .projects {
   display: flex;
-  flex-wrap: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin: 0 10px;
+  overflow: hidden;
 }
 
 .project {
   margin: 15px;
   flex: 1;
-  overflow: hidden;
+
 }
 
 .project img {
-  width: auto;
-  height: 300px;
+  position: relative;
+  object-fit: contain;
+  width: 350px;
+  height: auto;
   opacity: 60%;
 }
 
 .project img:hover {
-  width: auto;
-  height: 350px;
+  position: relative;
+  object-fit: contain;
+  width: 400px;
+  height: auto;
   opacity: 100%;
 }
 
@@ -196,7 +214,6 @@ section {
 }
 /* CONTACT-ME STYLE ENDS */
 
-
 /* UTILITIES */
 .blue-text {
   color: var(--quinary-color);
@@ -205,40 +222,56 @@ section {
 
 .inverted-text {
   display: table;
-
- padding: 5px;
- margin: 10px;
- font-size: 30px;
- background: var(--secondary-color);
-color: var(--quaternary-color);
+  padding: 5px;
+  margin: 10px;
+  font-size: 30px;
+  background: var(--secondary-color);
+  color: var(--quaternary-color);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1360px) {
+  .bio-img,
+  .bio-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+
+  .projects {
+    flex: 0 70%;
+  }
+}
+
 @media screen and (max-width: 980px) {
   header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
   }
 
   header h1 {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
   header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
   }
 
   header nav ul li a {
-      font-size: 20px;
+    font-size: 20px;
   }
 
-  .bio-img, .bio-text {
-      width: 100%;
-      text-align: center;
+  .bio-img,
+  .bio-text {
+    width: 100%;
+    text-align: center;
   }
 
   .bio-text p {
@@ -246,70 +279,73 @@ color: var(--quaternary-color);
   }
 
   .section-title {
-      width: 80%;
+    width: 80%;
   }
 
-  .project {
-    flex: 100%;
-  }
-  .project a {
-      flex: 0 70%;
-  }
-
-  .contact iframe {
-      flex: 1 100%;
+  .projects {
+    flex: 0 70%;
   }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   section {
-      padding: 30px 15px;
+    padding: 30px 15px;
   }
-  
+
   .project h3 {
-      flex: 1 100%;
-      text-align: center;
+    flex: 1 100%;
+    text-align: center;
   }
 
   .project a {
-      flex: 2 100%;
-      text-align: center;
-      justify-content: center;
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
   }
 
   .project img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      object-fit: contain;
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 250px;
+    height: auto;
   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   .section-title {
-      width: 95%;
+    width: 95%;
+  }
+
+  .projects {
+    flex: 0 100%;
   }
 
   .project p {
-      width: 100%;
+    width: 100%;
+  }
+
+  .project img {
+    width: 125px;
+    height: auto;
   }
 
   .section-content {
-      flex: 0 100%;
+    flex: 0 100%;
   }
 
   .contact {
-      text-align: center;
+    text-align: center;
   }
 
   .contact > * {
-      flex: 0 100%;
+    flex: 0 100%;
   }
 
   .contact div {
-      order: 3;
+    order: 3;
   }
 }
