@@ -1,151 +1,196 @@
 :root {
-    --primary-color: #000000;
-    --secondary-color: #f8d7ac;
-    --tertiary-color: #dd7233;
-    --quaternary-color: #21573d;
+  --primary-color: #000000;
+  --secondary-color: #f8d7ac;
+  --tertiary-color: #dd7233;
+  --quaternary-color: #21573d;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    color: var(--secondary-color);
-    background: var(--quaternary-color);
+  color: var(--secondary-color);
+  background: var(--quaternary-color);
 }
 
 /* HEADER / NAVBAR STYLES START */
 header {
-    background: url(../images/green-header.jpg);
-    background-size: auto;
-    background-attachment: fixed;
-    background-position: 30%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    top: 0;
+  background: url(../images/green-header.jpg);
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: 30%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
 }
 
 header img {
-    max-height: 150px;
-    max-width: 150px;
-    margin-top: -30px;
+  max-height: 150px;
+  max-width: 150px;
+  margin-top: -30px;
 }
 
 header h1 {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 header h1 a {
-    text-decoration: none;
-    color: var(--tertiary-color);
-    font-size: 2vw;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-size: 2vw;
 }
 
 header nav {
-    margin: 7px 0;
+  margin: 7px 0;
 }
 
-header nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
-    color: var(--primary-color);
-    padding: 20px 50px;
-    font-size: 1.55vw;
+  color: var(--primary-color);
+  padding: 20px 50px;
+  font-size: 1.55vw;
 }
 
 header nav ul li a:hover {
-    color: var(--tertiary-color);
-    text-shadow: -2px 2px var(--primary-color);
+  color: var(--tertiary-color);
+  text-shadow: -2px 2px var(--primary-color);
 }
- /* HEADER STYLE ENDS */
+/* HEADER STYLE ENDS */
 
-
- /* FOOTER STYLE STARTS */
+/* FOOTER STYLE STARTS */
 footer {
-    background : var(--primary-color);
-    width: 100%;
-    padding: 40px 65px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  background: var(--primary-color);
+  width: 100%;
+  padding: 40px 65px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer h2 {
-    align-items: center;
-    color: var(--tertiary-color);
-    font-size: 30px;
-    margin: 0;
+  align-items: center;
+  color: var(--tertiary-color);
+  font-size: 30px;
+  margin: 0;
 }
 
 footer div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-align: right;
 }
 
 footer div p {
-    color: var(--secondary-color);
-    padding: 20px 80px;
-    font-size: 20;
+  color: var(--secondary-color);
+  padding: 20px 80px;
+  font-size: 20;
 }
 
 footer div p a {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 footer div p a:hover {
-    color: var(--tertiary-color);
+  color: var(--tertiary-color);
 }
 
 footer div p a:visited {
-    color: #ffff00;
+  color: #ffff00;
 }
- /* FOOTER STYLE ENDS */
+/* FOOTER STYLE ENDS */
 
- /* SECTION STYLE STARTS */
- section {
-    padding: 50px;
- }
+/* SECTION STYLE STARTS */
+section {
+  padding: 50px;
+}
 
- .section-title {
-    color: var(--tertiary-color);
-    font-size: 30px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 50px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
- }
+.section-title {
+  color: var(--tertiary-color);
+  font-size: 30px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 35%;
+}
+
+/* SECTION STYLE ENDS */
+
+/* ABOUT ME STYLE STARTS */
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bio-img {
+  width: 35%;
+  margin: 3.5%;
+}
+
+.bio-img img {
+  width: 400px;
+  height: auto;
+}
+
+.bio-text {
+  padding: 20px;
+  width: 40%;
+  color: var(--secondary-color);
+}
+
+.bio-text h3 {
+  font-size: 23px;
+  margin: 0;
+}
+.bio-text p {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+/* ABOUT ME STYLE ENDS */
+
+/* WORK STYLE STARTS */
+.projects {
+  display: flex;
+  flex-wrap: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project {
+  margin: 15px;
+  flex: 1;
+}
 
 
- /* SECTION STYLE ENDS */
 
- /* ABOUT ME STYLE STARTS */
- .about-me {
-     width: 100%;
-     margin: 0 auto;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
- }
+.project img {
+  width: auto;
+  height: 300px;
+  opacity: 70%;
+}
 
- /* UTILITIES */
- .flex-row {
-     display: flex;
- }
-
- 
+.project img:hover {
+  width: auto;
+  height: 350px;
+  opacity: 100%;
+}
