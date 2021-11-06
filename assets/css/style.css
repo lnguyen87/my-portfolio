@@ -139,12 +139,13 @@ section {
   flex-wrap: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 10px;
 }
 
 .project {
   margin: 15px;
   flex: 1;
+  overflow: hidden;
 }
 
 .project img {
@@ -202,7 +203,7 @@ section {
   font-style: italic;
 }
 
-.inverted-color {
+.inverted-text {
   display: table;
 
  padding: 5px;
@@ -210,4 +211,105 @@ section {
  font-size: 30px;
  background: var(--secondary-color);
 color: var(--quaternary-color);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+  }
+
+  header h1 {
+      width: 100%;
+      text-align: center;
+  }
+
+  header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+  }
+
+  header nav ul li a {
+      font-size: 20px;
+  }
+
+  .bio-img, .bio-text {
+      width: 100%;
+      text-align: center;
+  }
+
+  .bio-text p {
+    font-size: 14px;
+  }
+
+  .section-title {
+      width: 80%;
+  }
+
+  .project {
+    flex: 100%;
+  }
+  .project a {
+      flex: 0 70%;
+  }
+
+  .contact iframe {
+      flex: 1 100%;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+      padding: 30px 15px;
+  }
+  
+  .project h3 {
+      flex: 1 100%;
+      text-align: center;
+  }
+
+  .project a {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .project img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      object-fit: contain;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .section-title {
+      width: 95%;
+  }
+
+  .project p {
+      width: 100%;
+  }
+
+  .section-content {
+      flex: 0 100%;
+  }
+
+  .contact {
+      text-align: center;
+  }
+
+  .contact > * {
+      flex: 0 100%;
+  }
+
+  .contact div {
+      order: 3;
+  }
 }
