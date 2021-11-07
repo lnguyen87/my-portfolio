@@ -11,12 +11,7 @@ What are the steps required to install your project? Open my Github profie by cl
 Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     ```md
-    ![image of self](assets/images/img.jpg)
-    ![my logo](assets/images/mylogo.png)
-    ![resume icon](assets/images/resume-icon.png)
-    ![horiseon-challenge image](assets/images/horiseon-challenge.png)
-
-    ```
+    Educational purpose. 
 ## Credits
  courses.bootcampspot.com, LNguyen87
 
